@@ -1,0 +1,24 @@
+h1 {
+    color: #FFFFFF;
+    font-family: 'Russo One', sans-serif;
+    font-size: 150px;
+    text-align: center;
+}
+ul {
+    color: #000000;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+html {
+    background-color: #004e00
+}
+img {
+    float: center;
+}
+p {
+    color: #FFFFFF;
+    font-family: 'Russo One', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
