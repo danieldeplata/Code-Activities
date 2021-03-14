@@ -1,0 +1,149 @@
+.bounceMe {
+    /* Add the animation bounceArrow here */
+    animation: bounceArrow .7s infinite;
+}
+
+.spinMe {
+    /* Add the animation for spin on the line below  */
+    animation: spin 2s infinite;
+}
+
+#progressbar {
+    background-color: black;
+    border-radius: 5px;
+    margin-top: 61px;
+    padding: 3px;
+}
+
+#progressbar>.orangeBar {
+    background-color: red;
+    width: 40%;
+    height: 20px;
+    border-radius: 5px;
+    /* add the animation name here for the progress bar */
+    animation: loadBar 4s;
+    animation-fill-mode: forwards;
+}
+
+.movingBox {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    /* Add the animation name here to mox the box */
+    animation: movingBox 5s;
+}
+
+.logo:hover {
+    filter: invert(12%) sepia(94%) saturate(7476%) hue-rotate(1deg) brightness(108%) contrast(110%);
+}
+
+.logo {
+    width: 20%;
+    height: auto;
+    animation: logoMove 10s infinite;
+}
+
+@keyframes bounceArrow {
+    from {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 7px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes loadBar {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes movingBox {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    25% {
+        transform: translate3d(100px, 0px, 0px);
+    }
+    50% {
+        transform: translate3d(50px, 300px, 0px);
+    }
+    75% {
+        transform: translate3d(200px, 100px, 0px);
+    }
+    to {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes logoMove {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+        fill: black;
+    }
+    25% {
+        transform: translate3d(800px, 0px, 0px);
+        filter: invert(12%) sepia(94%) saturate(7476%) hue-rotate(1deg) brightness(108%) contrast(110%);
+    }
+    50% {
+        transform: translate3d(400px, 800px, 0px);
+        filter: hue-rotate(100deg);
+    }
+    to {
+        transform: translate3d(0px, 400px, 0px);
+        fill: black;
+    }
+}
+
+
+/* these values are used to display the grid and items*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "arrow preload" "loadingBar loadingBar" "boxMove boxMove" "logoMove logoMove";
+}
+
+.gridChild {
+    margin: 15px;
+    padding: 15px;
+    height: 200px;
+}
+
+.arrow {
+    grid-area: arrow;
+    text-align: center;
+}
+
+.preload {
+    grid-area: preload;
+    text-align: center;
+}
+
+.loadingBar {
+    grid-area: loadingBar;
+}
+
+.boxMove {
+    grid-area: boxMove;
+}
+
+.logoMove {
+    grid-area: logoMove;
+}

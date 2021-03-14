@@ -1,0 +1,49 @@
+/* Style your dropdown below! */
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Open Sans";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+li:hover {
+    background-color: lightskyblue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#toggle {
+    background-color: #FF6767;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid black;
+    color: white;
+}
+
+#toggle:hover {
+    background-color: #bd4c4c;
+}
+
+img {
+    width: 20px;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+#dropDown {
+    display: none;
+}
